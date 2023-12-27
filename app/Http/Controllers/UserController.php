@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    public function index()
+    {
+        return view('users.index');
+    }
+
+    public function create()
+    {
+        return view('users.create');
+    }
+
+    public function show($user)
+    {
+        return view('users.show', compact('user'));
+    }
+}

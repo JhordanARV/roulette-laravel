@@ -1,0 +1,28 @@
+Comandos Composer - Laravel - docker
+
+composer i --no-dev -o #Para Instalar los paquetes
+composer u --no-dev -o #Para actualizar paquetes
+
+php -S localhost:8080 index.php #Para correr el php
+php -S localhost:8080 -t public/ #Para correr el php en la raiz de una carpeta
+
+composer dump-autoload -o #Para generar el autoload, especificado en el archivo json de composer
+
+composer global require sllh/composer-versions-check #Verifica las libreria sean las mas adecuadas para el proyecto [ composer update ]
+composer global require icanhazstring/composer-unused #Verifica que librerias no se estan usando [ vendor/bin/composer-unused ]
+
+autoload
+https://getcomposer.org/doc/04-schema.md#autoload
+
+./vendor/bin/phpunit
+
+
+php artisan migrate --seed // Para migrar y ejecutar los seeders
+php artisan migrate:fresh --seed // para eliminar tablas y volverlas a crear con los seeders
+
+php artisan make:factory PlayerFactory // Para crear el factory
+
+docker-compose up -d // Para levantar el docker
+docker-compose down // Para bajar el docker
+docker-compose logs -f // Para ver los logs del docker
+docker-compose ps // Para ver los contenedores que estan corriendo
